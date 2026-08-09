@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Issue Books</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fas fa-book-open"></i>
+
+Library Management System
+
+</div>
+
+<div class="nav-right">
+
+<button id="darkBtn">🌙</button>
+
+<div class="profile">
+
+<i class="fas fa-user-circle"></i>
+
+Admin
+
+</div>
+
+</div>
+
+</nav>
+
+<div class="container">
+
+<section class="welcome">
+
+<h2>📖 Issue Book</h2>
+
+<p>Assign books to students.</p>
+
+</section>
+
+<section class="form-container">
+
+<h2>Issue Details</h2>
+
+<div class="form">
+
+<input type="text" id="studentName" placeholder="Student Name">
+
+<input type="text" id="bookTitle" placeholder="Book Title">
+
+<input type="date" id="issueDate">
+
+<input type="date" id="dueDate">
+
+<button onclick="issueBook()">
+
+<i class="fas fa-book-reader"></i>
+
+Issue Book
+
+</button>
+
+</div>
+
+</section>
+
+<section class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Student</th>
+
+<th>Book</th>
+
+<th>Issue Date</th>
+
+<th>Due Date</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="issueTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+</div>
+
+<footer>
+
+© 2026 Library Management System
+
+</footer>
+
+<script src="js/issue.js"></script>
+
+<script src="js/darkmode.js"></script>
+
+<script src="js/sidebar.js"></script>
+
+</body>
+
+</html>
